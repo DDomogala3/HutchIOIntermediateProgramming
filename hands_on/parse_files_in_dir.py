@@ -2,6 +2,11 @@ import argparse
 import os
 
 import hands_on.FileParser as FileParser
+# create two classes, CSV parser and XLS parser that will inherit from the
+# supplied base class: FileParser.
+#Create a loop that wil exmine each file returned. It must decide whether to
+#invoke a CSV parser object or an XLS parser object or skip the file with some
+#message that doesn't look like the type you expected
 
 def parse_files_in_dir(directory_path, column_name):
     all_files = os.listdir(directory_path)
@@ -11,7 +16,7 @@ def parse_files_in_dir(directory_path, column_name):
 
         if filename.endswith(".csv"):
             print("File was a CSV!")
-            #Put your code here!
+            #put your code here!
             pass
         if filename.endswith(".xls"):
             print("File was an XLS!")
@@ -58,4 +63,3 @@ print(directory_name)
 print(column_name)
 if cmd_args.is_test == None or cmd_args.is_test == False:
     parse_files_in_dir(directory_name, column_name)
-
