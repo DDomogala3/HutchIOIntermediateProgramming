@@ -16,11 +16,11 @@ def parse_files_in_dir(directory_path, column_name):
 
         if filename.endswith(".csv"):
             print("File was a CSV!")
-            #put your code here!
+            class CSV_parser():
             pass
         if filename.endswith(".xls"):
             print("File was an XLS!")
-            # Put your code here!
+            class XLS():
             pass
         else:
             #let us know if a file isn't a csv or xls file
